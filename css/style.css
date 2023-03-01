@@ -1,53 +1,52 @@
 body {
-    background-color: gray;
-    font-family: "Inconsolata", monospace;
+  background-color: gray;
+  font-family: "Inconsolata", monospace;
 }
 
 .container {
-    margin: auto;
-    width: 50%;
-    padding: 10px;
-    text-align: center;
+  margin: auto;
+  width: 50%;
+  padding: 10px;
+  text-align: center;
 }
 
 .buttons {
-    text-align: center;
-    margin-bottom: 15px;
+  text-align: center;
+  margin-bottom: 15px;
 }
 
 .messages {
-    text-align: center;
-    margin-top: 10px;
+  text-align: center;
+  margin-top: 10px;
 }
 
 .btn {
-    display: inline-block;
-    min-width: 160px;
-    margin-top: 60px;
-    padding: 25px;
-    border-radius: 5px;
-    font-family: "Inconsolata", monospace;
-    font-size: 16px;
-    text-align: center;
-    text-decoration: none;
-    cursor: pointer;
-    background-color: rgba(238, 204, 15, 0.822);
-    background-position: 100% 0;
-    background-size: 300%;
-  }
-  
-  .btn:hover {
-    background-position: 0 100%;
-    color: #ffffff;
-    transition: all 1s;
-  }
-  
-  .btn-one {
-    color: rgb(255, 255, 255);
-    background-image: linear-gradient(90deg, #dbceaa 50%, transparent 50%);
-  }
-  
-  .btn-one:hover {
-    color: black;
-  }
-  
+  display: inline-block;
+  min-width: 160px;
+  margin-top: 60px;
+  padding: 25px;
+  border-radius: 5px;
+  font-family: "Inconsolata", monospace;
+  font-size: 16px;
+  text-align: center;
+  text-decoration: none;
+  cursor: pointer;
+  background-color: rgba(238, 204, 15, 0.822);
+  background-position: 100% 0;
+  background-size: 300%;
+}
+.btn:hover {
+  background-position: 0 100%;
+  color: #ffffff;
+  transition: all 1s;
+}
+
+.btn-one {
+  color: rgb(255, 255, 255);
+  background-image: linear-gradient(90deg, #dbceaa 50%, transparent 50%);
+}
+.btn-one:hover {
+  color: black;
+}
+
+/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIi4uL3Nhc3Mvc3R5bGUuc2NzcyIsInN0eWxlLmNzcyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiQUFPQTtFQUNDLHNCQUpvQjtFQUtwQixxQ0FOZTtBQ0FoQjs7QURRQTtFQUNDLFlBQUE7RUFDQSxVQUFBO0VBQ0EsYUFBQTtFQUNBLGtCQUFBO0FDTEQ7O0FET0E7RUFDQyxrQkFBQTtFQUNBLG1CQUFBO0FDSkQ7O0FETUE7RUFDQyxrQkFBQTtFQUNBLGdCQUFBO0FDSEQ7O0FES0E7RUFDQyxxQkFBQTtFQUNBLGdCQUFBO0VBQ0EsZ0JBQUE7RUFDQSxhQUFBO0VBQ0Esa0JBQUE7RUFDQSxxQ0E1QmU7RUE2QmYsZUFBQTtFQUNBLGtCQUFBO0VBQ0EscUJBQUE7RUFDQSxlQUFBO0VBQ0EsMkNBL0JvQjtFQWdDcEIsMkJBQUE7RUFDQSxxQkFBQTtBQ0ZEO0FER0M7RUFDQywyQkFBQTtFQUNBLGNBekNRO0VBMENSLGtCQUFBO0FDREY7O0FESUE7RUFDQyx5QkE3Q1M7RUE4Q1Qsc0VBQUE7QUNERDtBREVDO0VBQ0MsWUEvQ1E7QUMrQ1YiLCJmaWxlIjoic3R5bGUuY3NzIn0= */

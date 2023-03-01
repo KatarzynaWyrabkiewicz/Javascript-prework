@@ -1,0 +1,52 @@
+$color_1: #ffffff;
+$color_2: rgb(255, 255, 255);
+$color_3: black;
+$font-family_1: "Inconsolata", monospace;
+$background-color_1: gray;
+$background-color_2: rgba(238, 204, 15, 0.822);
+
+body {
+	background-color: $background-color_1;
+	font-family: $font-family_1;
+}
+.container {
+	margin: auto;
+	width: 50%;
+	padding: 10px;
+	text-align: center;
+}
+.buttons {
+	text-align: center;
+	margin-bottom: 15px;
+}
+.messages {
+	text-align: center;
+	margin-top: 10px;
+}
+.btn {
+	display: inline-block;
+	min-width: 160px;
+	margin-top: 60px;
+	padding: 25px;
+	border-radius: 5px;
+	font-family: $font-family_1;
+	font-size: 16px;
+	text-align: center;
+	text-decoration: none;
+	cursor: pointer;
+	background-color: $background-color_2;
+	background-position: 100% 0;
+	background-size: 300%;
+	&:hover {
+		background-position: 0 100%;
+		color: $color_1;
+		transition: all 1s;
+	}
+}
+.btn-one {
+	color: $color_2;
+	background-image: linear-gradient(90deg, #dbceaa 50%, transparent 50%);
+	&:hover {
+		color: $color_3;
+	}
+}

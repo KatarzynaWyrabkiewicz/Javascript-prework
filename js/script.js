@@ -29,58 +29,61 @@ function getSelectByName(selectId) {
   }
 }
 
-function  compare(playerOne, playerTwo) {
+function compare(playerOne, playerTwo) {
   // PlayerOne - gracz
   // PlayerTwo - komputer
 
   // remis
 if ( playerOne == playerTwo) {
-  return 0
+  return "draw"
 };
 
-  // Kamień x Papier = 2, czyli kompu (p2) wygrywa
+  // Kamień x Papier = computerWin, czyli kompu (p2) wygrywa
 if ( playerOne == 1 && playerTwo == 2) {
-  return 2
+  return "computerWin"
 };
 
- // Kamień x Nożyce = 1 czyli gracz (p1) wygrywa
+ // Kamień x Nożyce = playerWin czyli gracz (p1) wygrywa
 if ( playerOne == 1 && playerTwo == 3) {
-  return 1
+  return "playerWin"
 };
 
- // Papier x Kamień = 1, czyli gracz (p1) wygrywa
+ // Papier x Kamień = playerWin, czyli gracz (p1) wygrywa
 if ( playerOne == 2 && playerTwo == 1) {
-  return 1
+  return "playerWin"
 };
 
- // Papier x Nożyce = 2, czyli kompu (p2) wygrywa
+ // Papier x Nożyce = computerWin, czyli kompu (p2) wygrywa
 if ( playerOne == 2 && playerTwo == 3) {
-  return 2
+  return "computerWin"
 };
 
- // Nożyce x Papier = 1, czyli gracz (p1) wygrywa
+ // Nożyce x Papier = playerWin, czyli gracz (p1) wygrywa
 if ( playerOne == 3 && playerTwo == 2) {
-  return 1
+  return "playerWin"
 };
 
- // Nożyce x Kamien = 2, czyli kompu (p2) wygrywa
+ // Nożyce x Kamien = computerWin, czyli kompu (p2) wygrywa
 if ( playerOne == 3 && playerTwo == 1) {
-  return 2
+  return "computerWin"
 };
 
 return null
 }
 
+// Podaje wynik rozgrywki
 function result(buttonClickedId) {
   clearMessages();
   console.log("Clicked number no.: "+ buttonClickedId);
   let computerBet=Math.floor(Math.random() * 3 + 1);
   printMessage("Gracz wybrał "+getSelectByName(buttonClickedId) + " a ja "+ getSelectByName(computerBet));
-  if (compare(buttonClickedId, computerBet) == 0) {
+  let compareResult = compare(buttonClickedId, computerBet);
+
+  if (compare(buttonClickedId, computerBet) == "draw") {
     printMessage("Co oznacza, że jest remis.");
-  } else if (compare(buttonClickedId, computerBet) == 1) {
+  } else if (compare(buttonClickedId, computerBet) == "playerWin") {
     printMessage("Co oznacza, że gracz wygrał.")
-  } else if (compare(buttonClickedId, computerBet) == 2) {
+  } else if (compare(buttonClickedId, computerBet) == "computerWin") {
     printMessage("Co oznacza, że ja wygrało.");
   } else {
     printMessage("Co oznacza, że coś poszło nie tak...")
